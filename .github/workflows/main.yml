@@ -13,7 +13,7 @@ on:
 
 jobs:
   test:
-      runs-on: debian-latest
+      runs-on: ubuntu-latest
       name: Test the library out.
       steps:
         - uses: actions/checkout@v2
