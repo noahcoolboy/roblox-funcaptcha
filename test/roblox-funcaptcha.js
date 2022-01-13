@@ -10,6 +10,11 @@ fun.getToken("476068BF-9607-4799-B53D-966BE98E2B81").then(async token => {
     }
 
     let captcha = await fun.getFuncaptcha(token)
+
+    if(["shadow-icons", "penguins", "shadows", "dice_pair", "mismatched-jigsaw", undefined].includes(captcha.gameVariant)) {
+        throw new Error("Detected by Arkose Labs, got gameVariant: " + captcha.gameVariant)
+    }
+
     for(let x = 0; x < captcha.waves; x++) {
         let image = await captcha.getImage()
         if(isValidImage(image)) {
