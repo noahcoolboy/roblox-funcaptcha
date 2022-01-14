@@ -11,6 +11,12 @@ fun.getToken("476068BF-9607-4799-B53D-966BE98E2B81").then(async token => {
 
     let captcha = await fun.getFuncaptcha(token)
 
+    if(captcha.info.game_data.gameType == 1) {
+        throw new Error("Received the ball game! This library only supports the tile game.")
+    } else if(captcha.info.game_data.gameType != 3) {
+        throw new Error("Received unknown game type: gametype " + captcha.info.game_data.gameType)
+    }
+    
     if(["shadow-icons", "penguins", "shadows", "dice_pair", "mismatched-jigsaw", undefined].includes(captcha.gameVariant)) {
         throw new Error("Detected by Arkose Labs, got gameVariant: " + captcha.gameVariant)
     }
