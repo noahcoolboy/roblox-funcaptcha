@@ -20,3 +20,4 @@ jobs:
         - uses: actions/setup-node@v2
         - run: npm install
         - run: npm test
+        - run: npm run benchmark
