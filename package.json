@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node test/roblox-funcaptcha"
+    "test": "node test/roblox-funcaptcha",
+    "benchmark": "node test/benchmark"
   },
   "keywords": [
     "roblox",
