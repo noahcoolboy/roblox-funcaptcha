@@ -1,0 +1,23 @@
+{
+  "name": "roblox-funcaptcha",
+  "version": "4.1.2",
+  "description": "Easily get and interact with roblox funcaptchas.",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test/roblox-funcaptcha",
+    "benchmark": "node test/benchmark"
+  },
+  "keywords": [
+    "roblox",
+    "funcaptcha"
+  ],
+  "author": "noahcoolboy",
+  "license": "MIT",
+  "repository": "noahcoolboy/roblox-funcaptcha",
+  "dependencies": {
+    "undici": "^4.12.2"
+  }
+}
