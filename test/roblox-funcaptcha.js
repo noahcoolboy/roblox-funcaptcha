@@ -36,12 +36,11 @@ async function test(publicKey, name) {
         }
     }
     console.log("Test passed for " + name + "!")
-})
 }
 
 setImmediate(async () => {
     await test("476068BF-9607-4799-B53D-966BE98E2B81", "Login")
-    await test("476068BF-9607-4799-B53D-966BE98E2B81", "Signup")
+    await test("A2A14B1D-1AF3-C791-9BBC-EE33CC7A0A6F", "Signup")
     await test("63E4117F-E727-42B4-6DAA-C8448E9B137F", "Group Join")
     await test("1B154715-ACB4-2706-19ED-0DC7E3F7D855", "Promocode Redeem")
 })
