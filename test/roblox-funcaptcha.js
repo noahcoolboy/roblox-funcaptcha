@@ -19,7 +19,7 @@ async function test(publicKey, name) {
         throw new Error("Received unknown game type: gametype " + captcha.info.game_data.gameType)
     }
     
-    if(captcha.gameVariant.startsWith("dice_") || captcha.gameVariant.startsWith("dart") || captcha.gameVariant.startsWith("context-") || ["shadow-icons", "penguins", "shadows", "mismatched-jigsaw", "stairs_walking", "reflection", undefined].includes(captcha.gameVariant)) {
+    if(captcha.gameVariant.startsWith("dice_") || captcha.gameVariant.startsWith("dart") || captcha.gameVariant.startsWith("context-") || ["shadow-icons", "penguins", "shadows", "mismatched-jigsaw", "stairs_walking", "reflection", "card", undefined].includes(captcha.gameVariant)) {
         throw new Error("Detected by Arkose Labs, got gameVariant: " + captcha.gameVariant)
     }
 
