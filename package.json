@@ -1,6 +1,6 @@
 {
   "name": "roblox-funcaptcha",
-  "version": "4.1.13",
+  "version": "4.1.14",
   "description": "Easily get and interact with roblox funcaptchas.",
   "main": "main.js",
   "directories": {
