@@ -33,7 +33,8 @@ The token argument must either be the parsed json from fun.getToken, or the raw 
 `string Session.key` Internal.  
 `number Session.wave` The current wave, starts at 0.  
 `Array<Object | Array> Session.answer_history` Internal.  
-`string Session.originalToken` The original token from fun.getToken. Very useful for sending a login request.  
+`string Session.originalToken` The original token from fun.getToken. Very useful for sending a login request. 
+`boolean Session.supressed` If the captcha is supressed or not. Supressed captchas can be skipped entirely.
 
 **Methods**  
 `Promise<Buffer> getImage()`  

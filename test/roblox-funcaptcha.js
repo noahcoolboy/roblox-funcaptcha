@@ -11,6 +11,11 @@ async function test(publicKey, name) {
         throw new Error("Invalid token")
     }
 
+    if(token.token.includes("sup=1")) {
+        console.log("Supressed captcha!")
+        return
+    }
+
     let captcha = await fun.getFuncaptcha(token)
 
     if(captcha.info.game_data.gameType == 1) {
