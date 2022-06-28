@@ -18,6 +18,6 @@
   "license": "MIT",
   "repository": "noahcoolboy/roblox-funcaptcha",
   "dependencies": {
-    "undici": "^4.12.2"
+    "undici": "^5.5.1"
   }
 }
