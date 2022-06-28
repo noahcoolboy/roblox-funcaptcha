@@ -1,5 +1,6 @@
 # roblox-funcaptcha
 ## CURRENTLY UNMAINTAINED
+Please use https://github.com/noahcoolboy/funcaptcha instead  
 roblox-funcaptcha is a library designed to interface with roblox's funcaptchas.
 ### Usage
 You can simply install the library using:
